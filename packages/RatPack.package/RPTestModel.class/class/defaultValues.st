@@ -1,6 +1,6 @@
 needed methods
 defaultValues  
 
-^ Dictionary newFrom: { 'salary'-> 1.
-						'name'-> 'Max Mustermann'}
+^ Dictionary newFrom: { 'name'-> 'Max Mustermann'.
+						'salary'-> 1}
 	

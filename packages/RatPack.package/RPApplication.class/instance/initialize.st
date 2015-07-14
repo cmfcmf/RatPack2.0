@@ -5,4 +5,5 @@ initialize
 	self onRequestDo: [:httpRequest | self processRequest: httpRequest].
 	self initializeDynamicVariables.
 	self initializeRoutes. 
-	self initializePragmaRoutes
+	self initializePragmaRoutes.
+	self initializeEndpointRoutes
