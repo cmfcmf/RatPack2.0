@@ -22,7 +22,6 @@
 		"loadModelObjectsOf:" : "LB 7/15/2015 02:18",
 		"loadTable:" : "LB 7/13/2015 10:59",
 		"persist:from:" : "LB 7/12/2015 23:48",
-		"resolveForeignKeysIn:for:" : "LB 7/15/2015 02:23",
 		"rowToDict:" : "LB 7/15/2015 02:05",
 		"rowToDict:for:" : "MF 7/14/2015 15:01",
 		"transformToCollection:" : "MF 7/14/2015 15:02",

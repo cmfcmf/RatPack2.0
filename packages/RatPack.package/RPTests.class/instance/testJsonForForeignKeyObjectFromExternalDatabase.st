@@ -1,15 +1,16 @@
 test - foreign keys
-testJsonForForeignKeyObject
+testJsonForForeignKeyObjectFromExternalDatabase
 
 	| modelDict foreignKeyName jsonString testObjectDict |
-	app registerModel: RPTestModelFK;
+	app database: RPPostgreSQLAdapter new;
+		 registerModel: RPTestModelFK;
 		 registerModel: RPTestModel. 
 
 	RPTestHelper persistNew: 1 on: app.
 	foreignKeyName := 'testmodelid'.
 	jsonString := '{', ('"{1}":{2}' format: {foreignKeyName. 1}), '}'.
 	app persistObjectBy: jsonString from: RPTestModelFK.  
-	self halt.
+
 	modelDict := (app database loadModelObject: 1 from: RPTestModelFK) asDict.
 	testObjectDict := (modelDict at: #object).
 
