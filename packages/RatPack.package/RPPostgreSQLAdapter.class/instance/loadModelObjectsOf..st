@@ -1,8 +1,7 @@
 object handling
-loadModelObjectsOf: aRPModelClass
+loadModelObjectsOf: anRPModelClass
 
 	| response objectsAsDicts |
-	response := self executeSQLStatement: ('SELECT * FROM ', (aRPModelClass tableName)).
-	objectsAsDicts := self transformToCollection: response. 
-	
-	^ objectsAsDicts collect: [:each | (aRPModelClass constructModel: each)].
+	response := self executeSQLStatement: ('SELECT * FROM ', (anRPModelClass tableName)).
+	objectsAsDicts := self resolveForeignKeysIn: (self transformToCollection: response) for: anRPModelClass. 
+	^ objectsAsDicts collect: [:each | (anRPModelClass constructModel: each)].

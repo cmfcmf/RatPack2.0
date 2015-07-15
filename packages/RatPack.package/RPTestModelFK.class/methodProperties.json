@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"dataTypes" : "LB 7/15/2015 00:35",
+		"dataTypes" : "LB 7/15/2015 01:44",
 		"defaultValues" : "LB 7/15/2015 00:22",
-		"foreignKeys" : "LB 7/15/2015 00:33",
-		"refClass" : "LB 7/15/2015 00:22" },
+		"foreignKeys" : "LB 7/15/2015 01:44",
+		"refClass" : "LB 7/15/2015 00:22",
+		"tableName" : "LB 7/15/2015 01:25" },
 	"instance" : {
 		 } }

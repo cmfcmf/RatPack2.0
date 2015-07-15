@@ -1,4 +1,4 @@
 as yet unclassified
 foreignKeys 
 
-	^ Dictionary newFrom: {'testModelId'->RPTestModel}
+	^ Dictionary newFrom: {'testmodelid'->RPTestModel}

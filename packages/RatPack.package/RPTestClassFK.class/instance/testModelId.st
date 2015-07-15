@@ -1,4 +1,4 @@
 accessing
 testModelId
 
-	^ testModelId
+	^ testmodelid
