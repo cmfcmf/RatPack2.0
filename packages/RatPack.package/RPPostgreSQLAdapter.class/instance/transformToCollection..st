@@ -1,7 +1,7 @@
 object handling
 transformToCollection: aPGResponse
 
-	^ aPGResponse dataRows collect: [ :row | self rowToDict: row]
+	^ aPGResponse dataRows collect: [:row | self rowToDict: row]
 
 
 

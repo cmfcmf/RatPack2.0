@@ -1,5 +1,5 @@
 accesing
 refClass
-	"Return the referenced class."
+"Return the referenced class."
 
 	self subclassResponsibility 

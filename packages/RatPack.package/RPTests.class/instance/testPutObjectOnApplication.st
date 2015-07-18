@@ -7,7 +7,5 @@ testPutObjectOnApplication
 	testJson := RPTestHelper getExampleJson.
 	RPTestHelper put: url on: app content: RPTestHelper getExampleJson.
 	self assert: (RPTestModel createJsonFor: 
-					(app database loadModelObject: 1 from: RPTestModel) object) 
-					equals: testJson.
-	
-	
+		(app database loadModelObject: 1 from: RPTestModel) object) 
+		equals: testJson

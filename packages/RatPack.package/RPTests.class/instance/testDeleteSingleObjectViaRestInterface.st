@@ -12,4 +12,4 @@ testDeleteSingleObjectViaRestInterface
 	RPTestHelper delete: idUrl on: app.
 	result := RPTestHelper get: url on: app.
 	self assert: ([app database loadModelObject: 1 from: RPTestModel. false] 
-								on: Warning do: [true]).
+								on: Warning do: [true])

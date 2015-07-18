@@ -1,7 +1,7 @@
 actions
 removeAllApplications
 
-	self applicationList do: [ :each  |
+	self applicationList do: [:each  |
 		RPApplication removeService: each stop;
-										      yourself.
-		self change.]
+		yourself.
+		self change]

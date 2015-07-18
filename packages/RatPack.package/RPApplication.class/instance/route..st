@@ -1,5 +1,6 @@
 routing
-route: aHttpRequest 
+route: aHttpRequest
+
 	| method arguments match methodRoutes |
 	method := aHttpRequest method asLowercase asSymbol asMutator.
 	methodRoutes := self routesFor: method.
@@ -7,7 +8,8 @@ route: aHttpRequest
 	match := self findHandlerFor: aHttpRequest in: methodRoutes.
 	match ifNil: [^ self notFound].
 
-	"args needed as array by self perfom: withArguments:"
+"args needed as array by self perfom: withArguments:"
 	arguments := (aHttpRequest url findTokens: '/') allButFirst asArray
 			ifEmpty: [^ self perform: match value].
+
 	^ self perform: match value withArguments: arguments

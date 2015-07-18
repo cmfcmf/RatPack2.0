@@ -1,4 +1,4 @@
 needed methods
 foreignKeys 
 
-^ Dictionary new	
+	^ Dictionary new	

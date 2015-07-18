@@ -3,4 +3,4 @@ connection
 
 	connection ifNil: [connection := PGConnection new].
 	
-	^ connection connectionArgs: self connectionArguments.
+	^ connection connectionArgs: self connectionArguments

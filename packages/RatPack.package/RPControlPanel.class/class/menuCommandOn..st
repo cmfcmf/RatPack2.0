@@ -1,5 +1,6 @@
 world menu
-menuCommandOn: aBuilder  
+menuCommandOn: aBuilder
+
 	<worldMenu>
 	(aBuilder item: 'RatPack Control Panel')
 		parent: #Tools;

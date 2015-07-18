@@ -1,4 +1,5 @@
-as yet unclassified
+needed methods
 dataTypes
 
-	^ Dictionary newFrom: {'testModelId'->'INT'. 'price'->'INT'}
+	^ Dictionary newFrom: {'testModelId'->'INT'.
+		'price'->'INT'}

@@ -7,4 +7,4 @@ initialize
 		applicationIndex: 0;
 		layoutPolicy: ProportionalLayout new;
 		buildApplicationList;
-		buildApplicationDetail.
+		buildApplicationDetail

@@ -7,4 +7,5 @@ asJson
 	jsonDict at: #metadata put: self metadata.
 	stream := WriteStream on: String new.
 	jsonDict jsonWriteOn: stream.
+
 	^ stream contents  

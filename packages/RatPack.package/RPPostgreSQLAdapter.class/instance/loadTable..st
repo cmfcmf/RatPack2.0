@@ -6,4 +6,5 @@ loadTable: aRPModelClass
 	self connection startup. 
 	response := self connection execute: metaInfoStatement.
 	self connection terminate.
+
 	^ response

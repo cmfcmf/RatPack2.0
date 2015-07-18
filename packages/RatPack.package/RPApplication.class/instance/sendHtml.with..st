@@ -5,4 +5,4 @@ sendHtml: aHtmlString with: anURIString
 		status: 200;
 		contentType: 'text/html';
 		body:  aHtmlString contents;
-		headers: {'Location' -> anURIString asString copy. 'URI' -> anURIString asString copy. 'server' -> self name}.
+		headers: {'Location' -> anURIString asString copy. 'URI' -> anURIString asString copy. 'server' -> self name}

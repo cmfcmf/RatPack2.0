@@ -5,4 +5,4 @@ fillApplicationMenu: aMenu from: aSpecificationList
 		lbl isSymbol
 			ifFalse: [aMenu add: (key ifNil: [lbl] ifNotNil: [lbl, ' (', key asString, ')']) action: action]
 			ifTrue: [aMenu addUpdating: lbl action: action].
-		 aMenu balloonTextForLastItem: help].
+		 aMenu balloonTextForLastItem: help]

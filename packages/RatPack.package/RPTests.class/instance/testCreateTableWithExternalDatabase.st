@@ -1,6 +1,6 @@
 test - database - postgresql
 testCreateTableWithExternalDatabase
-	"Simple test to check if you can create a table on your database." 
+"Simple test to check if you can create a table on your database." 
 	
 	| tableExistsStatement response |
 	app database: RPPostgreSQLAdapter new.

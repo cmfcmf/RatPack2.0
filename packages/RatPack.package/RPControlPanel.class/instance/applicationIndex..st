@@ -1,6 +1,6 @@
 accessing
 applicationIndex: anObject
-	"Set the value of applicationIndex"
+"Set the value of applicationIndex"
 
 	applicationIndex := anObject.
-	self change.
+	self change

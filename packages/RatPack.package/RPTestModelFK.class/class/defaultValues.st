@@ -1,4 +1,4 @@
-as yet unclassified
+needed methods
 defaultValues 
 
 	^ Dictionary newFrom: {'price'->10}

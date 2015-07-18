@@ -12,4 +12,4 @@ buildApplicationList
 						width: self width;
 						height: self height / 2;
 						topLeft: self topLeft)
-		fullFrame: (LayoutFrame fractions: (0@0 corner: 1@0.49)).
+		fullFrame: (LayoutFrame fractions: (0 @ 0 corner: 1 @ 0.49))

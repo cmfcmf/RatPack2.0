@@ -8,4 +8,5 @@ createJsonFor: anObject
 	self dataTypes keys do: [:each |
 			dictionary at: each put: (anObject instVarNamed: each value)].
 	dictionary jsonWriteOn: stream.
-	^stream contents
+
+	^ stream contents

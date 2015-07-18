@@ -4,4 +4,4 @@ change
 	self
 		changed: #applicationList;
 		changed: #applicationIndex;
-		changed: #applicationInspect.
+		changed: #applicationInspect

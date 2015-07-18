@@ -5,4 +5,4 @@ renderLiteralStringFrom: rs to: stream
 		nextPutAll: 'r00t nextPutAll: ';
 		nextPutAll: (rs upToAll: '<%') printString;
 		nextPut: $.;
-		nextPut: Character cr.
+		nextPut: Character cr

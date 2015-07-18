@@ -1,13 +1,14 @@
 instance creation
-method: aString rawUrl: aUrlString headers: aDictionary content: contentString
+method: aString rawUrl: anUrlString headers: aDictionary content: contentString
 
 	aDictionary at: 'Content-Type' ifPresent: [:v | aDictionary at: 'content-type' put: v].
+
 	^ self basicNew
 		header: aDictionary;
 		initialize;
-		initStatusString: aString, ' ', aUrlString, ' HTTP/1.0';
+		initStatusString: aString, ' ', anUrlString, ' HTTP/1.0';
 		propertyAt: #rawPostFields put: (aString = 'POST'
-											ifTrue: [contentString] ifFalse: ['']);
+			ifTrue: [contentString] ifFalse: ['']);
 		propertyAt: #rawPutFields put: (aString = 'PUT'
-											ifTrue: [contentString] ifFalse: ['']);
+			ifTrue: [contentString] ifFalse: ['']);
 		yourself

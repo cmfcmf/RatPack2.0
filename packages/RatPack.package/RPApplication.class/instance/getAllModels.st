@@ -4,5 +4,6 @@ getAllModels
 	| aJsonString |
 	aJsonString := '{"models":[',
 		((self modelClasses asOrderedCollection collect: [:each |
-      	each structureAsJson]) joinSeparatedBy: ','), ']}'.
-      ^ self sendJson: aJsonString with: 'html'
+      		each structureAsJson]) joinSeparatedBy: ','), ']}'.
+
+      ^ self sendJson: aJsonString with: 'api'

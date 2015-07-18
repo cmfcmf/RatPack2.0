@@ -1,4 +1,4 @@
 sql helpers
 convertAssociationToSQLString: anAssociation
 
-	^ (anAssociation key) , ' ', (anAssociation value)
+	^ (anAssociation key), ' ', (anAssociation value)

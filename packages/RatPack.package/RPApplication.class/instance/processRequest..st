@@ -9,4 +9,5 @@ processRequest: aHttpRequest
 	self body ifEmpty: [self body: response].
 	(self body isEmpty and: [self status = 404]) ifTrue: [self notFound].
 	self logWindow logRequest: aHttpRequest andResponse: response.
+
 	^ self response

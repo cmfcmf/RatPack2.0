@@ -2,6 +2,6 @@ actions
 removeApplication
 
 	RPApplication removeService: self selectedApplication
-										stop;
-										yourself.
-	self change.
+		stop;
+		yourself.
+	self change

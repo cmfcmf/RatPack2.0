@@ -1,5 +1,5 @@
 accessing
 applicationIndex
-	"Answer the value of applicationIndex"
+"Answer the value of applicationIndex"
 
 	^ applicationIndex

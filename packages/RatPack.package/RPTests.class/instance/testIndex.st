@@ -1,5 +1,6 @@
 test - routing
 testIndex
+
 	| result |
 	result := RPTestHelper get: '/index' on: app.
 	self assert: (result contents contents includesSubString: 'Hello World').

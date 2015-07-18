@@ -6,4 +6,5 @@ applicationMenu: aMenu shifted: shift
 	self selectedApplication ifNotNil: [
 		aMenu addLine.
 		self fillApplicationMenu: aMenu from: self class menuKeyMap second].
+
 	^ aMenu

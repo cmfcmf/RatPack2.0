@@ -1,9 +1,8 @@
 validation
-validateObject: aObject
+validateObject: anObject
 
 	| neededAttritbutes allAttributes |
-
 	neededAttritbutes := self dataTypes keys asOrderedCollection copy.
-	allAttributes := aObject class allInstVarNames. 
+	allAttributes := anObject class allInstVarNames. 
 	
 	^ allAttributes asSet includesAllOf: neededAttritbutes asSet 	

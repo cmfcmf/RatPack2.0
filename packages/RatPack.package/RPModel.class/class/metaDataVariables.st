@@ -1,8 +1,9 @@
 metadata handling
 metaDataVariables
+"return self idColumnName asArray asOrderedCollection "
 
 	| collection |
-"	^ self idColumnName asArray asOrderedCollection "
 	collection := OrderedCollection  new.
 	collection add: #id.
+
 	^ collection 

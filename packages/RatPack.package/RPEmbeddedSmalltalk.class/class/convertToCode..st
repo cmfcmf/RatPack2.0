@@ -1,8 +1,10 @@
 compiling
 convertToCode: aString
-	"Converts the embedded smalltalk code into string concatenation with"
+"Converts the embedded smalltalk code into string concatenation"
+
 	| rs |
 	rs := ReadStream on: aString.
+
 	^ String streamContents: [:stream |
 		self writePreambleFor: aString on: stream.
 		[self renderLiteralStringFrom: rs to: stream.

@@ -1,4 +1,4 @@
 actions
 exploreObject
 
-	self selectedApplication explore.
+	self selectedApplication explore

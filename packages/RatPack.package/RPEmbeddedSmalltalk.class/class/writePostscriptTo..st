@@ -1,4 +1,4 @@
 compiling
 writePostscriptTo: stream
 
-	stream nextPutAll: 'r00t contents.'.
+	stream nextPutAll: 'r00t contents.'

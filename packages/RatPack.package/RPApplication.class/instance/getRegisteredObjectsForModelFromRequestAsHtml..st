@@ -1,5 +1,5 @@
 object handling
-getRegisteredObjectsFromRequestAsHtml: aRPModelname
+getRegisteredObjectsForModelFromRequestAsHtml: aRPModelname
  
       | objectString objects |
 	objectString := ''.
